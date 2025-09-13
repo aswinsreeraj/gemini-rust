@@ -10,6 +10,14 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;900&display=swap" rel="stylesheet">
     <style>
+
+        html {
+            font-size: 130%;
+        }
+
+        p {
+            font-size: 120%;
+        }
         body {
             font-family: 'Inter', sans-serif;
             position: relative;
@@ -71,30 +79,22 @@
             50% { transform: rotate(-20deg) scale(1.05); }
             100% { transform: rotate(-25deg) scale(1); }
         }
+
+        ::-webkit-scrollbar {
+            display: none;
+        }
+
+        section {
+            height: 100vh;
+        }
+
     </style>
 </head>
 <body class="bg-gray-900 text-gray-200">
 
-    <div class="rust-crab">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" fill="#d1d5db" stroke="#d1d5db" stroke-width="2">
-            <!-- Body -->
-            <path d="M50 85C35 85 20 70 20 50s15-35 30-35c15 0 30 15 30 35s-15 35-30 35z" />
-            <!-- Left Claw -->
-            <path d="M20 50L5 35c-5 0-5-10 0-10l15 15z" />
-            <path d="M5 35a5 5 0 0 1 0-10" />
-            <!-- Right Claw -->
-            <path d="M80 50L95 35c5 0 5-10 0-10l-15 15z" />
-            <path d="M95 35a5 5 0 0 0 0-10" />
-            <!-- Left Eye -->
-            <circle cx="38" cy="40" r="5" />
-            <!-- Right Eye -->
-            <circle cx="62" cy="40" r="5" />
-        </svg>
-    </div>
+    <div class="container mx-auto p-4 md:p-8" style="max-width: 1440px;">
 
-    <div class="container mx-auto p-4 md:p-8">
-
-        <header class="text-center my-12">
+        <header class="text-center my-12" style="height:70vh; margin-top:35vh;">
             <div class="flex items-center justify-center mb-2">
                  <svg width="8%" height=8%" viewBox="0 0 1200 800" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:1.41421;">
                     <g id="Layer-1" serif:id="Layer 1">
@@ -151,31 +151,33 @@
 
         <main class="space-y-16">
 
-            <section id="c-plus-plus-legacy" class="bg-gray-800 p-6 md:p-8 rounded-lg shadow-2xl">
+            <section id="c-plus-plus-legacy">
                 <h3 class="text-2xl md:text-3xl font-bold text-center mb-6 text-[#ffa600]">The Enduring Legacy of C/C++</h3>
                  <p class="max-w-3xl mx-auto text-center mb-8 text-gray-400">
                     For decades, C and C++ have been the backbone of high-performance computing, giving developers unparalleled power and control. Their dominance is built on a few key pillars.
                 </p>
-                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 text-center">
-                    <div class="bg-gray-700 p-6 rounded-lg">
-                        <div class="text-4xl mb-2">⚡</div>
-                        <h4 class="text-xl font-semibold">High Performance</h4>
-                        <p class="text-gray-400 text-sm">Direct memory access and minimal runtime overhead.</p>
-                    </div>
-                    <div class="bg-gray-700 p-6 rounded-lg">
-                        <div class="text-4xl mb-2">⚙️</div>
-                        <h4 class="text-xl font-semibold">Hardware Control</h4>
-                        <p class="text-gray-400 text-sm">Low-level access ideal for systems and embedded devices.</p>
-                    </div>
-                    <div class="bg-gray-700 p-6 rounded-lg">
-                        <div class="text-4xl mb-2">🏛️</div>
-                        <h4 class="text-xl font-semibold">Decades of Use</h4>
-                        <p class="text-gray-400 text-sm">Vast ecosystems, libraries, and community knowledge.</p>
-                    </div>
-                    <div class="bg-gray-700 p-6 rounded-lg">
-                        <div class="text-4xl mb-2">🖥️</div>
-                        <h4 class="text-xl font-semibold">System Programming</h4>
-                        <p class="text-gray-400 text-sm">The language of operating systems, browsers, and game engines.</p>
+                <div class="bg-gray-800 p-6 md:p-8 rounded-lg shadow-2xl">
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-6 items-center">
+                        <div class="bg-gray-700 p-6 rounded-lg">
+                            <div class="text-4xl mb-2">⚡</div>
+                            <h4 class="text-xl font-semibold">High Performance</h4>
+                            <p class="text-gray-400 text-sm">Direct memory access and minimal runtime overhead.</p>
+                        </div>
+                        <div class="bg-gray-700 p-6 rounded-lg">
+                            <div class="text-4xl mb-2">⚙️</div>
+                            <h4 class="text-xl font-semibold">Hardware Control</h4>
+                            <p class="text-gray-400 text-sm">Low-level access ideal for systems and embedded devices.</p>
+                        </div>
+                        <div class="bg-gray-700 p-6 rounded-lg">
+                            <div class="text-4xl mb-2">🏛️</div>
+                            <h4 class="text-xl font-semibold">Decades of Use</h4>
+                            <p class="text-gray-400 text-sm">Vast ecosystems, libraries, and community knowledge.</p>
+                        </div>
+                        <div class="bg-gray-700 p-6 rounded-lg">
+                            <div class="text-4xl mb-2">🖥️</div>
+                            <h4 class="text-xl font-semibold">System Programming</h4>
+                            <p class="text-gray-400 text-sm">The language of operating systems, browsers, and game engines.</p>
+                        </div>
                     </div>
                 </div>
             </section>
@@ -316,7 +318,7 @@
                 </div>
             </section>
 
-            <footer class="text-center my-12 border-t border-gray-700 pt-8">
+            <footer class="text-center my-12 border-t border-gray-700 pt-8" style="padding-top: 50vh;height: 100vh;">
                 <div class="flex items-center justify-center mb-4">
                     <h3 class="text-2xl md:text-3xl font-bold text-[#ffa600] mr-4">The Future of Systems Programming</h3>
                     <svg width="6%" height=6%" viewBox="0 0 1200 800" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:1.41421;">
